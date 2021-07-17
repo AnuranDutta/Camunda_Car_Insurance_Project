@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" id="Evaluate-RisksV2" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.6.0">
+  <decision id="evaluate-risksV2" name="Evaluate Risks V2">
+    <decisionTable id="DecisionTable_13ukh95" hitPolicy="FIRST" biodi:annotationsWidth="400">
+      <input id="Input_1" label="Car Manufacturer">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>carManufacturer</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0g1vpp9" label="Driver Age" biodi:width="150">
+        <inputExpression id="LiteralExpression_1dee6h0" typeRef="integer">
+          <text>age</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0a5btan" label="Car Type">
+        <inputExpression id="LiteralExpression_1d6z47g" typeRef="string">
+          <text>carType</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Risk" name="risk" typeRef="integer" />
+      <rule id="DecisionRule_1uwaxzb">
+        <inputEntry id="UnaryTests_1kmykc1">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06d0ioh">
+          <text>&gt;=75</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1w9oh0s">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1k247ii">
+          <text>90</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0pkfrqc">
+        <inputEntry id="UnaryTests_1rabolv">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_115hlz3">
+          <text>&gt;=65</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04sv249">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0err8tn">
+          <text>75</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_13p4y5g">
+        <inputEntry id="UnaryTests_1xjpfpd">
+          <text>"Audi","BMW"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_00lugji">
+          <text>&lt;25</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0p84qpn">
+          <text>"Sports-Utility","Luxury"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1gsizob">
+          <text>75</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1o1k7vc">
+        <inputEntry id="UnaryTests_1v2pl5v">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1y6e06t">
+          <text>&lt;25</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1eg7352">
+          <text>"Sports-Utility","Luxury"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_16kj2h7">
+          <text>65</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ww30c7">
+        <inputEntry id="UnaryTests_1sm4a63">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1szgrft">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1h6foap">
+          <text>"Sports-Utility","Luxury"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1okehwh">
+          <text>55</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0vmrmjt">
+        <inputEntry id="UnaryTests_0c6jwu6">
+          <text>"Audi","BMW"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0kejkvf">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09xv3pe">
+          <text>"Economy"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ln9bdn">
+          <text>55</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0uw8trl">
+        <inputEntry id="UnaryTests_14dl4d4">
+          <text>"Maruti-Suzuki"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13vz9z3">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_14w5bpi">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1lp55uy">
+          <text>30</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1hombkn">
+        <inputEntry id="UnaryTests_0lxnn45">
+          <text>"Toyota"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0by0986">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0dr80j9">
+          <text>"Economy"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_16wb3uy">
+          <text>35</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1omz22n">
+        <inputEntry id="UnaryTests_1d5h7c8">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_10pcx5d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0u6ysjh">
+          <text>"Economy"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00ry7ys">
+          <text>40</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="evaluate-risksV2">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

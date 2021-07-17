@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Http Requests & JavaScript</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="axios.js" defer></script>
+</head>
+
+<body>
+    <header class="container-fluid landing-wrapper">
+        <div class="row ">
+            <div class=" col offset-1 " id="in-header">
+                <img src="car-insurance.svg" height="70px">
+                <span id="branad-logo-name" class="align-middle">BRAVO CAR INSURANCE</span>
+            </div>
+        </div>
+    </header>
+    <div class="container container-form-color">
+        <div class="row justify-content-center">
+            <section id="control-center">
+                <div class="form-group row">
+                    <h1 class="text-dark">Check Approval Now!</h1>
+                </div>
+                <div class="form-group row">
+                    <label for="inp-customerName">Name:</label>
+                    <input type="text" name="name" id="inp-customerName" class="form-control"
+                        placeholder="Your Name" autocomplete="off">
+                </div>
+                <div class="form-group row">
+                    <label for="inp-customerAge">Age:</label>
+                    <input type="text" name="age" id="inp-customerAge" class="form-control" placeholder="Your Age"
+                    autocomplete="off">
+                </div>
+                <div class="form-group row">
+                    <label for="inp-carAge">How old is your car?</label>
+                    <input type="text" name="car age" id="inp-carAge" class="form-control" placeholder="Car Age"
+                    autocomplete="off">
+                </div>
+		<div class="form-group row">
+                    <label for="inp-carPrice">Buying Price of the Car:</label>
+                    <input type="text" name="" id="inp-carPrice" class="form-control" placeholder="Price In Rupees"
+                    autocomplete="off">
+                </div>
+                <div class="form-group row ">
+                    <label for="inp-carManufacturer">Manufacturer:</label>
+                    <select class="form-control" id="inp-carManufacturer" autocomplete="off">
+                        <option>Audi</option>
+                        <option>BMW</option>
+                        <option>KIA</option>
+                        <option>Maruti Suzuki</option>
+                        <option>Mahindra</option>
+                        <option>Tata Motors</option>
+                        <option>Toyota</option>
+                    </select>
+                </div>
+                <div class="form-group row">
+                    <label for="inp-carType">Car Type:</label>
+                    <select class="form-control" id="inp-carType" autocomplete="off">
+                        <option>Economy</option>
+                        <option>Luxury</option>
+                        <option>Sports-Utility</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary" id="post-btn">Submit</button>
+                </div>
+                <hr>
+                <div>
+                    <p class="text-center" id="result"></p>
+                    <p class="text-center" id="errors"></p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
